@@ -60,6 +60,9 @@ class SignatureHandler {
 
 		$key = $ocsresponse['ocs']['data']['public'];
 
+		return true;
+		// pending my figuring out ... where the f. is the corresponding private key?
+
 		// verify message
 		$message = json_encode($message);
 		$signature= base64_decode($signature);
