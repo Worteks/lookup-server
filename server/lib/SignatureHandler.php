@@ -42,7 +42,7 @@ class SignatureHandler {
 		// Retrieve public key && store
 		$ocsreq = new \GuzzleHttp\Psr7\Request(
 			'GET',
-			'http://'.$host . '/ocs/v2.php/identityproof/key/' . $user,
+			'https://'.$host . '/ocs/v2.php/identityproof/key/' . $user,
 			[
 				'OCS-APIREQUEST' => 'true',
 				'Accept' => 'application/json',
